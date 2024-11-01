@@ -85,6 +85,7 @@ public class Frontend extends VerticalLayout implements KeyNotifier {
         }
     }
 
+    
     private String getMessageFromServer() {
         try (Socket socket = new Socket("172.28.0.2", 12345)) {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
